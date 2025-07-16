@@ -26,14 +26,9 @@ def generateCSV(num_rows, fileName):
 
     with open(file_path, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
-
-            # Write the header
         csv_writer.writerow(header)
-
-            # Write the data rows
         csv_writer.writerows(rows)
-
-# --- Example Usage ---
+        
 num_rows_to_generate = 3000 
 output_filename = "testData.csv"
 generateCSV(num_rows_to_generate, output_filename)
